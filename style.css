@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 300px;
+    border: 2px solid black;
+    background: rgba(140, 171, 190, 0.25);
+}
+
+.screen{
+    border-radius: 5px 5px 0 0;
+    background: #ffffff;
+    width: 290px;
+    border: 1px solid black;
+    font-size: 40px;
+    text-align: right;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 5px;
+
+}
+
+.button-size {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 0;
+    font-size: 20px;
+    background: slategray;
+}
+
+.zero-size{
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 128px;
+    height: 50px;
+    border-radius: 40px;
+    border: 0;
+    background: slategray;
+}
+
+.execute__button {
+    margin-top: 5px;
+    margin-left: 25px;
+    width: 50px;
+    height: 230px;
+    outline: none;
+    border: 0;
+    background: yellow;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.actions{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.numbers{
+    display: flex;
+    width: calc(100% - 80px);
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.solar {
+    border: 2px solid silver;
+    width: 45%;
+    height: 30px;
+    background: rgba(107, 72, 8, 0.959);
+    margin: 5px;
+    margin-left: 180px;
+    display: flex;
+    align-self: flex-end;
+}
+.solar__line{
+    width: 25%;
+    border-right: 2px solid black;
+}
