@@ -1,6 +1,8 @@
 var Calculator = {
     screenContainer: document.getElementsByClassName('screen')[0],
     numbersInString: '',
+    buttons: document.getElementsByClassName('keys__btn'),
+    actions: document.getElementsByClassName('action'),
     getSymbol: function(number) {
         Calculator.numbersInString = Calculator.numbersInString + String(number);
         Calculator.screenContainer.innerHTML = Calculator.numbersInString;
@@ -20,8 +22,24 @@ document.addEventListener('keyup', function(event){
 
     if(/^\d+$/.test(code)){
         Calculator.getSymbol(code);
+        
+        for(let i = 0; i < Calculator.buttons.length; i++){
+            let tempElem = Calculator.buttons[i];
+            if (tempElem.innerHTML == event.key){
+                tempElem.classList.add('key-hover');
+                setTimeout(function(){ tempElem.classList.remove('key-hover') }, 100);
+            }
+        }
     } else if (code == '/' || code == '*' || code == '-' || code == '+') {
         Calculator.getSymbol(code);
+
+        // for(let e = 0; i < Calculator.actions.length; i++){
+        //     let tempElem = Calcuelator.actions[i];
+        //     if (tempElem.innerHTML == event.key){
+        //         tempElem.classList.add('key-hover');
+        //         setTimeout(function(){ tempElem.classList.remove('key-hover') }, 100);
+        //     }
+        // }|
     } else if (event.code == 'NumpadEnter' || event.code == 'Enter'){
         Calculator.calculation()
     } else if (code == 'Delete'){

@@ -18,10 +18,10 @@
                 <div></div>
             </div>
             <div class="actions">
-                <button onclick="Calculator.getSymbol('/')" style="background: rgba(255, 123, 0, 0.9);" class="button-size">/</button>
-                <button onclick="Calculator.getSymbol('*')" style="background: rgba(255, 123, 0, 0.9);" class="button-size">x</button>
-                <button onclick="Calculator.getSymbol('-')" style="background: rgba(255, 123, 0, 0.9);" class="button-size">-</button>
-                <button onclick="Calculator.getSymbol('+')" style="background: rgba(255, 123, 0, 0.9);" class="button-size">+</button>
+                <button onclick="Calculator.getSymbol('/')" class="button-size action">/</button>
+                <button onclick="Calculator.getSymbol('*')" class="button-size action">x</button>
+                <button onclick="Calculator.getSymbol('-')" class="button-size action">-</button>
+                <button onclick="Calculator.getSymbol('+')" class="button-size action">+</button>
             </div>
             <div class="numbers">
                 <button onclick="Calculator.getSymbol('7')" class="button-size keys__btn">7</button>
@@ -33,9 +33,9 @@
                 <button onclick="Calculator.getSymbol('1')" class="button-size keys__btn">1</button>
                 <button onclick="Calculator.getSymbol('2')" class="button-size keys__btn">2</button>
                 <button onclick="Calculator.getSymbol('3')" class="button-size keys__btn">3</button>
-                <button onclick="Calculator.getSymbol('.')" class="button-size keys__btn" style="background: rgba(255, 123, 0, 0.9);">.</button>
+                <button onclick="Calculator.getSymbol('.')" class="button-size keys__btn action">.</button>
                 <button onclick="Calculator.getSymbol('0')" class="button-size keys__btn">0</button>
-                <button onclick="Calculator.clear()" style="background-color: #963" class="button-size keys__btn">C</button>
+                <button onclick="Calculator.clear()" class="button-size keys__btn" id="c">C</button>
             </div>
             <div class="execute">
                 <button class="execute__button" onclick="Calculator.calculation()">=</button>
