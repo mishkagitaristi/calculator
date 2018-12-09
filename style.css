@@ -2,12 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
+}
+
+.calculator{
+    width: 100%;
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #f1f1f1;
+    color: #000000;
+    text-align: right;
 }
 
 .body {
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    text-align: center;
+    border: 1px solid #d3d3d3;
     border-radius: 5px;
-    margin-top: 30px;
-    margin-left: 30px;
     width: 300px;
     border: 2px solid black;
     background: rgba(140, 171, 190, 0.25);
@@ -16,6 +30,7 @@
 .screen{
     border-radius: 5px 5px 0 0;
     background: #ffffff;
+    font-size: bolder;
     width: 290px;
     border: 1px solid black;
     font-size: 40px;
@@ -56,7 +71,7 @@
     height: 230px;
     outline: none;
     border: 0;
-    background: yellow;
+    background: rgba(255, 123, 0, 0.9);
     border-radius: 40px;
     cursor: pointer;
     font-size: 20px;

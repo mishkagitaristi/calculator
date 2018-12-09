@@ -7,7 +7,8 @@
 </head>
 <body>
     
-    <div class="body">
+    <div class="body" id="body">
+        <h4 class="calculator" id="calculator">calculator</h1>
         <div class="screen" id="screen">0</div>
         <div class="keys">
             <div class="solar">
@@ -17,10 +18,10 @@
                 <div></div>
             </div>
             <div class="actions">
-                <button onclick="Calculator.getSymbol('+')" style="background: rgba(255, 255, 0, 0.9);" class="button-size">+</button>
-                <button onclick="Calculator.getSymbol('-')" style="background: rgba(255, 255, 0, 0.9);" class="button-size">-</button>
-                <button onclick="Calculator.getSymbol('*')" style="background: rgba(255, 255, 0, 0.9);" class="button-size">x</button>
-                <button onclick="Calculator.getSymbol('/')" style="background: rgba(255, 255, 0, 0.9);" class="button-size">/</button>
+                <button onclick="Calculator.getSymbol('/')" style="background: rgba(255, 123, 0, 0.9);" class="button-size">/</button>
+                <button onclick="Calculator.getSymbol('*')" style="background: rgba(255, 123, 0, 0.9);" class="button-size">x</button>
+                <button onclick="Calculator.getSymbol('-')" style="background: rgba(255, 123, 0, 0.9);" class="button-size">-</button>
+                <button onclick="Calculator.getSymbol('+')" style="background: rgba(255, 123, 0, 0.9);" class="button-size">+</button>
             </div>
             <div class="numbers">
                 <button onclick="Calculator.getSymbol('7')" class="button-size keys__btn">7</button>
@@ -32,7 +33,7 @@
                 <button onclick="Calculator.getSymbol('1')" class="button-size keys__btn">1</button>
                 <button onclick="Calculator.getSymbol('2')" class="button-size keys__btn">2</button>
                 <button onclick="Calculator.getSymbol('3')" class="button-size keys__btn">3</button>
-                <button onclick="Calculator.getSymbol('.')" class="button-size keys__btn" style="background: rgba(236, 236, 3, 0.9);">.</button>
+                <button onclick="Calculator.getSymbol('.')" class="button-size keys__btn" style="background: rgba(255, 123, 0, 0.9);">.</button>
                 <button onclick="Calculator.getSymbol('0')" class="button-size keys__btn">0</button>
                 <button onclick="Calculator.clear()" style="background-color: #963" class="button-size keys__btn">C</button>
             </div>
@@ -42,6 +43,9 @@
         </div>
     </div>
 
+    <!-- <button id="button">clickme</button>
+    <input type="text" id="input" placeholder="test input">
+    <span id="textArea"></span> -->
     <script src="app.js"></script>
 </body>
 </html>
